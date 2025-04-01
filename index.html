@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <main>
+    <h1 class="title-blue">Calculo IMC</h1>
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+<div class="inputs-calc">
+    <input type="text" placeholder="Metros" id="altura_input" maxlength="4">
+</div>
+<div class="inputs-calc">
+    <input type="text" placeholder="Quilos" id="peso_input" maxlength="4">
+</div>
+<div class="btn-calc">
+    <ul>
+        <li>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Calcular
+              </button> 
+        </li>
+        <li>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Limpar
+              </button>
+        </li>
+    </ul>
+    <table class="table-calc">
+        <thead>
+            <tr>
+                <th colspan="3">Confira o seu IMC:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-calc_blue">
+                <td>IMC</td>
+                <td>Classification</td>
+                <td>Obesidade
+                <small>(grau)</small>
+                </td>
+            </tr>
+            <tr id="result_calc_0">
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td style="text-align: center">0
+
+                </td>
+            </tr>
+            <tr id="result_calc_1">
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td style="text-align: center">0</td>
+            </tr>
+            <tr id="result_calc_2">
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td style="text-align: center">I</td>
+            </tr>
+            <tr id="result_calc_3">
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td style="text-align: center">II</td>
+            </tr>
+            <tr id="result_calc_4">
+                <td>Maior que 40,0</td>
+                <td>Obesidade Grave</td>
+                <td style="text-align: center">III</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</main>
+</div>
+</body>
+</html>

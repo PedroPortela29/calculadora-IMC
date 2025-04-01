@@ -1,0 +1,155 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(assets/academia_musculacao.png);
+    background-size: cover;
+    
+}
+
+.container{ 
+    border-radius: 26px;
+    box-sizing: border-box;
+    width: 10px;
+    padding: 24px;
+    margin: 48px 48px 48px 48px;
+    float: left;
+    font-size: 15px;
+    color: #707070;
+    font-weight: 400;
+    background-color: #ffff;
+    text-align: center;
+}
+
+.p{
+    margin-left: 800px;
+    font-size: 13px;
+    color: #707070;
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+
+}
+
+.title-blue {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #1f5eaf;
+    font-weight: 700;
+}
+
+.inputs-calc{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 6px 10px;
+    border: 1px solid #1f5eaf;
+    border-radius: 16px;
+}
+
+.btn-calc{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    margin-right: 10px;
+    list-style: none;
+    display: block; 
+    text-align: center;
+}
+
+.btn-calc li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 13px 45px 13px 28px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.table-calc {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-calc thead {
+    background-color: #1f5eaf;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.table-calc th, .table-calc td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table-calc_blue {
+    background-color: #1f5eaf;
+    color: white;
+    font-weight: bold;
+}
+#result_calc_0 {
+    background-color: #d0ebff;
+    color: #0056b3;
+}
+
+#result_calc_1 {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#result_calc_2 {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#result_calc_3 {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+#result_calc_4 {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+
+    .inputs-calc {
+        width: 100%;
+    }
+
+    .btn-calc {
+        text-align: center;
+    }
+}
